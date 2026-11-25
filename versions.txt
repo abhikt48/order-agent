@@ -1,0 +1,10 @@
+boto3==1.43.124
+langchain==1.4.9
+langchain-aws==1.9.1
+langchain-core==1.7.6
+langchain-protocol==0.0.20
+langgraph==1.2.20
+langgraph-checkpoint==4.3.1
+langgraph-checkpoint-aws==1.2.6
+langgraph-prebuilt==1.1.1
+langgraph-sdk==0.4.13
