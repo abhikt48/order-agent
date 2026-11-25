@@ -8,9 +8,9 @@ from langchain_aws import ChatBedrockConverse
 from langgraph.types import interrupt
 
 ## AWS Configuration
-MODEL_ID = os.getenv("MODEL_ID", "amazon.nova-lite-v1:0")
-REGION = os.getenv("AWS_REGION", "eu-north-1")
-TABLE_NAME = os.getenv("TABLE_NAME", "Orders")
+MODEL_ID = os.getenv("MODEL_ID")
+REGION = os.getenv("AWS_REGION")
+TABLE_NAME = os.getenv("ORDERS_TABLE")
 
 ## DynamoDB
 dynamodb = boto3.resource("dynamodb", region_name=REGION)

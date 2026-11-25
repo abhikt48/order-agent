@@ -9,7 +9,7 @@ SYSTEM = SystemMessage(content=(
 "a human will approve it. Be brief and never invent order details."
 ))
 
-llm_with_toools = llm.bind_tool(TOOLS)
+llm_with_toools = llm.bind_tools(TOOLS)
 
 def agent(state: MessagesState):
     return {"messages": [llm_with_toools.invoke([SYSTEM] + state["messages"])]}
